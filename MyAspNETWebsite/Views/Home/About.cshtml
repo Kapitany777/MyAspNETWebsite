@@ -1,7 +1,37 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@using MyAspNETWebsite.Models
+@model MyAspNETWebsite.Models.Person
 
-<p>Use this area to provide additional information.</p>
+@{
+    ViewBag.Title = "Rólam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<img src="~/Content/Images/avatar.jpg" class="avatar" />
+
+<h3>Személyes adatok:</h3>
+
+<p>
+    Név: @Model.Name<br />
+    Születési év: @Model.BirthDate<br />
+    Foglalkozás: @Model.Profession<br />
+    Lakhely: @Model.City
+</p>
+
+<p>
+    Honlap: <a href="@Model.HomePage" target="_blank">@Model.HomePage</a>
+</p>
+
+
+@if (Model.Qualifications.Count > 0)
+{
+    <h3>Végzettségek:</h3>
+
+    <ul>
+        @foreach (Qualification q in Model.Qualifications)
+        {
+            <li>@q.School: @q.Name</li>
+        }
+    </ul>
+}
