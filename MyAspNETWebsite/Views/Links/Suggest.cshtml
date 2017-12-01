@@ -23,5 +23,10 @@
         @Html.ValidationMessageFor(m => m.URL)
     </div>
 
+    <div class="form-group">
+        @Html.LabelFor(m => m.Remark)
+        @Html.TextAreaFor(m => m.Remark, new { @class = "form-control", rows = 7 })
+    </div>
+
     <input type="submit" class="btn btn-primary" value="Küldés" />
 }

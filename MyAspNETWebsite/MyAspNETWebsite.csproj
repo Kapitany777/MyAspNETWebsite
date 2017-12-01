@@ -183,6 +183,7 @@
     <Compile Include="Models\Link.cs" />
     <Compile Include="Models\LinkSuggestion.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PrivateMessage.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Qualification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -254,6 +255,8 @@
     <Content Include="Views\Links\ProgLinks.cshtml" />
     <Content Include="Views\Message\Index.cshtml" />
     <Content Include="Views\Links\Suggest.cshtml" />
+    <Content Include="Views\Links\SuggestionSent.cshtml" />
+    <Content Include="Views\Message\MessageSent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

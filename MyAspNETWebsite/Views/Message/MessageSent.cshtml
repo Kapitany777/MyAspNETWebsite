@@ -1,0 +1,30 @@
+﻿@model MyAspNETWebsite.Models.PrivateMessage
+
+@{
+    ViewBag.Title = "Az üzenet elküldve";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    Köszönjük az üzenetet, elküldtük az oldal adminisztrátorának!
+</p>
+
+<p>
+    Az üzenet a következő volt:
+</p>
+
+<p>
+    <strong>A felhasználó e-mail címe:</strong> @HttpContext.Current.User.Identity.Name
+    <br />
+    <strong>Tárgy:</strong> @Model.Subject
+</p>
+
+<p>
+    <strong>Az üzenet:</strong>
+</p>
+
+<p>
+    @Model.MessageText
+</p>

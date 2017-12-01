@@ -1,0 +1,24 @@
+﻿@model MyAspNETWebsite.Models.LinkSuggestion
+
+@{
+    ViewBag.Title = "Ajánlott link elküldve";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    Köszönjük az ajánlott linket, elküldtük az oldal adminisztrátorának!
+</p>
+
+<p>
+    Az ajánlott link a következő volt:
+</p>
+
+<p>
+    <strong>A felhasználó e-mail címe:</strong> @HttpContext.Current.User.Identity.Name
+    <br />
+    <strong>Link neve:</strong> @Model.LinkName
+    <br />
+    <strong>URL:</strong> @Model.URL
+</p>

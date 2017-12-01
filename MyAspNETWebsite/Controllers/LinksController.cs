@@ -39,7 +39,9 @@ namespace MyAspNETWebsite.Controllers
         {
             if (ModelState.IsValid)
             {
-                return View();
+                // Itt lehetne elküldeni e-mailben a linket az adminnak
+
+                return View("SuggestionSent", suggestion);
             }
             else
             {
