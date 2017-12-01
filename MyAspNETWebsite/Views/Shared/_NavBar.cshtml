@@ -13,8 +13,17 @@
                 <li>@Html.ActionLink("Főoldal", "Index", "Home")</li>
                 <li>@Html.ActionLink("Rólam", "About", "Home")</li>
                 <li>@Html.ActionLink("Kapcsolat", "Contact", "Home")</li>
-                <li>@Html.ActionLink("Linktár", "Index", "Links")</li>
+                <li>@Html.ActionLink("MI", "ArtificialIntelligence", "Home")</li>
+                <li>@Html.ActionLink("Linkek", "Index", "Links")</li>
+                <li>@Html.ActionLink("Programozás", "ProgLinks", "Links")</li>
+
+                @if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    <li>@Html.ActionLink("Ajánlás", "Suggest", "Links")</li>
+                    <li>@Html.ActionLink("Üzenet", "Index", "Message")</li>
+                }
             </ul>
+
             @Html.Partial("_LoginPartial")
         </div>
     </div>

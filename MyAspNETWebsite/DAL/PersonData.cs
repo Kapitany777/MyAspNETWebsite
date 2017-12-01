@@ -17,6 +17,7 @@ namespace MyAspNETWebsite.DAL
                 Profession = "programozó",
                 City = "Szentes",
                 HomePage = "http://www.braincluster.eu/",
+                LinkedinProfile = "https://www.linkedin.com/in/viktor-t%C3%B6r%C3%B6k-65b7a067/",
 
                 Qualifications = new List<Qualification>
                 {

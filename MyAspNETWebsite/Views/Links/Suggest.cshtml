@@ -1,0 +1,27 @@
+﻿@model MyAspNETWebsite.Models.LinkSuggestion
+
+@{
+    ViewBag.Title = "Link ajánlása";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.LinkName)
+        @Html.TextBoxFor(m => m.LinkName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LinkName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.URL)
+        @Html.TextBoxFor(m => m.URL, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.URL)
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Küldés" />
+}

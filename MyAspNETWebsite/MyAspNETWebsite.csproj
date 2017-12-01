@@ -171,14 +171,17 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LinksController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="DAL\LinksData.cs" />
     <Compile Include="DAL\PersonData.cs" />
+    <Compile Include="DAL\ProgLinksData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Link.cs" />
+    <Compile Include="Models\LinkSuggestion.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Qualification.cs" />
@@ -191,6 +194,7 @@
     <Content Include="Content\bootstrap_slate.css" />
     <Content Include="Content\bootstrap_slate.min.css" />
     <Content Include="Content\Images\avatar.jpg" />
+    <Content Include="Content\Images\robot.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -246,6 +250,10 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Links\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\ArtificialIntelligence.cshtml" />
+    <Content Include="Views\Links\ProgLinks.cshtml" />
+    <Content Include="Views\Message\Index.cshtml" />
+    <Content Include="Views\Links\Suggest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

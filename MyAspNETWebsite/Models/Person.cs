@@ -12,6 +12,7 @@ namespace MyAspNETWebsite.Models
         public string Profession { get; set; }
         public string City { get; set; }
         public string HomePage { get; set; }
+        public string LinkedinProfile { get; set; }
 
         public List<Qualification> Qualifications { get; set; }
     }

@@ -23,6 +23,11 @@ namespace MyAspNETWebsite.Controllers
             return View(person);
         }
 
+        public ActionResult ArtificialIntelligence()
+        {
+            return View();
+        }
+
         public ActionResult Contact()
         {
             return View();
